@@ -1,2 +1,2 @@
-# python-BackEnd-project
+# python_company
 django project
