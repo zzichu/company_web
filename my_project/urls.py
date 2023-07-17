@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-#from mysite import views 삭제
+from mysite import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('mysite/', include('mysite.urls')),
+    path('comment/create/<int:content_id>/', views.comment_create, name='comment_create'),
+    path('comment/update/<int:comment_id>/', views.comment_update, name='comment_update'),
+    path('comment/delete/<int:comment_id>/', views.comment_delete, name='comment_delete'),
 ]
