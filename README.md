@@ -1,2 +1,2 @@
-# python_company
+# company_web
 django project
