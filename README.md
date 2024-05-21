@@ -1,2 +1,2 @@
 # company_web
-django project
+django 익숙해지기
